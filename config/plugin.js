@@ -13,6 +13,11 @@ exports.cors = {
   package: 'egg-cors',
 }
 
+exports.logger = {
+  enable: true,
+  package: 'egg-logger',
+}
+
 exports.security = {
   enable: false,
 };

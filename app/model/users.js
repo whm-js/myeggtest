@@ -33,8 +33,8 @@ module.exports = app => {
     });
 
     Users.associate = function () {
-    assert.ok(app.model.Users);
-    assert.ok(app.model.Userinfo);
+    // assert.ok(app.model.Users);
+    // assert.ok(app.model.Userinfo);
     app.model.Users.hasOne(app.model.Userinfo, { foreignKey: 'id' });
     // app.model.User.hasMany(app.model.Family, { foreignKey: 'userId', targetKey: 'id' });
   }

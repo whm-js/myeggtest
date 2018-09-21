@@ -36,9 +36,9 @@ module.exports = app => {
     });
 
   Userinfo.associate = function () {
-    console.log(app.model)
-    assert.ok(app.model.Users);
-    assert.ok(app.model.Userinfo);
+    // console.log(app.model)
+    // assert.ok(app.model.Users);
+    // assert.ok(app.model.Userinfo);
     app.model.Userinfo.belongsTo(app.model.Users, { foreignKey: 'userID', targetKey: 'id' });
   }
   Userinfo.sync({ alter: true }) //同步model到数据库
